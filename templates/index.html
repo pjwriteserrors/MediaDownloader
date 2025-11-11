@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Downloader</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="background-gradient"></div>
+
+    <div class="container">
+        <h1 class="title">
+            <span class="material-symbols-outlined logo-icon">play_circle</span>
+            Video Downloader
+        </h1>
+
+        <div class="input-card glass">
+            <div class="input-group">
+                <input type="text" id="urlInput" placeholder="Enter video URL">
+                <button id="downloadBtn" class="btn-primary">
+                    <span class="material-symbols-outlined">download</span>
+                    <span>Download</span>
+                </button>
+            </div>
+
+            <div class="toggle-group">
+                <label class="switch">
+                    <input type="checkbox" id="formatToggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Video Mode</span>
+            </div>
+
+            <div id="audioFormats" class="format-group">
+                <label class="radio-btn">
+                    <input type="radio" name="format" value="mp3">
+                    <span>MP3</span>
+                </label>
+                <label class="radio-btn">
+                    <input type="radio" name="format" value="wav">
+                    <span>WAV</span>
+                </label>
+            </div>
+
+            <div id="videoFormats" class="format-group hidden">
+                <label class="radio-btn">
+                    <input type="radio" name="format" value="mp4">
+                    <span>MP4</span>
+                </label>
+                <label class="radio-btn">
+                    <input type="radio" name="format" value="mkv">
+                    <span>MKV</span>
+                </label>
+            </div>
+        </div>
+
+        <div id="videoPreview" class="preview hidden glass">
+            <img src="" id="thumbnail" alt="Thumbnail" class="fade-in">
+            <h2 id="title"></h2>
+
+            <div class="description-container">
+                <div id="description" class="collapsed"></div>
+                <button id="toggleDescription" class="desc-toggle hidden">Show more</button>
+            </div>
+
+            <div class="video-meta">
+                <div class="meta-badge">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <span id="duration"></span>
+                </div>
+                <div class="meta-badge">
+                    <span class="material-symbols-outlined">visibility</span>
+                    <span id="viewsCount"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/effects.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
