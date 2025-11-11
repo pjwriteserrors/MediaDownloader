@@ -33,6 +33,10 @@ If not, install it with your package manager or from the [website](https://ffmpe
 ```bash
 git clone https://github.com/pjwriteserrors/MediaDownloader.git && cd MediaDownloader && python -m venv venv && source venv/bin/activate && pip install -r requirements.txt && python app.py
 ```
+### Oneliner (Windows)
+```bash
+git clone https://github.com/pjwriteserrors/MediaDownloader.git && cd MediaDownloader && python -m venv venv && venv\Scripts\activate && pip install -r requirements.txt && python app.py
+```
 Then open your browser at https://127.0.0.1:5000
 ### Manual
 1. Clone the repo \
